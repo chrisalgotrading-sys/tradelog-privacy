@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TradeLog — Privacy Policy</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+      background: #0d0f14;
+      color: #e8eaf0;
+      line-height: 1.7;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    .logo {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .logo span { color: #00d4aa; }
+    .updated {
+      font-size: 13px;
+      color: #4a5568;
+      margin-bottom: 48px;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: 700;
+      color: #e8eaf0;
+      margin-bottom: 8px;
+    }
+    h2 {
+      font-size: 16px;
+      font-weight: 600;
+      color: #00d4aa;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin: 36px 0 12px;
+    }
+    p {
+      font-size: 15px;
+      color: #8892b0;
+      margin-bottom: 16px;
+    }
+    .highlight {
+      background: #141720;
+      border: 1px solid #2a2f45;
+      border-left: 3px solid #00d4aa;
+      border-radius: 6px;
+      padding: 16px 20px;
+      margin: 16px 0;
+      font-size: 15px;
+      color: #e8eaf0;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(0,212,170,0.1);
+      color: #00d4aa;
+      border: 1px solid rgba(0,212,170,0.3);
+      border-radius: 20px;
+      padding: 4px 14px;
+      font-size: 13px;
+      font-weight: 500;
+      margin-bottom: 32px;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #2a2f45;
+      margin: 40px 0;
+    }
+    .footer {
+      font-size: 13px;
+      color: #4a5568;
+      margin-top: 48px;
+    }
+    a { color: #00d4aa; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="logo">Trade<span>Log</span></div>
+    <div class="updated">Last updated: May 18, 2026</div>
+
+    <h1>Privacy Policy</h1>
+    <div class="badge">Chrome Extension</div>
+
+    <div class="highlight">
+      TradeLog does not collect, transmit, or store any user data on external servers. All your data stays on your device.
+    </div>
+
+    <h2>Data Collection</h2>
+    <p>TradeLog does not collect any personal information. The extension does not require you to create an account, provide an email address, or share any identifying information.</p>
+    <p>All trade records, account transactions, capital entries, and settings are stored exclusively in your browser's local storage using the <code>chrome.storage.local</code> API. This data lives on your own device and is never transmitted anywhere.</p>
+    <p>The developer has no access to your trading data at any time.</p>
+
+    <h2>External Network Requests</h2>
+    <p>TradeLog makes one type of external network request: a public GET request to <strong>api.frankfurter.app</strong> to retrieve currency exchange rates published by the European Central Bank.</p>
+    <p>This request:</p>
+    <ul style="color:#8892b0;font-size:15px;padding-left:24px;margin-bottom:16px;line-height:2;">
+      <li>Contains no user data</li>
+      <li>Contains no identifiers</li>
+      <li>Contains no personal information of any kind</li>
+      <li>Is made at most once per hour</li>
+      <li>Results are cached locally on your device</li>
+    </ul>
+    <p>The sole purpose of this request is to calculate accurate pip values for forex instruments.</p>
+
+    <h2>Data Sharing</h2>
+    <p>No user data is sold, transferred, or shared with any third party, under any circumstances.</p>
+
+    <h2>Data Retention & Deletion</h2>
+    <p>All data is stored locally on your device. You can delete all your data at any time by using the <strong>"Clear all data"</strong> button in the Extension settings tab. Uninstalling the extension also removes all locally stored data.</p>
+
+    <h2>Children's Privacy</h2>
+    <p>TradeLog does not knowingly collect any data from children under the age of 13. The extension is intended for adult traders.</p>
+
+    <h2>Changes to This Policy</h2>
+    <p>If this privacy policy changes, the updated version will be published at this URL with a new effective date. Continued use of the extension after changes constitutes acceptance of the updated policy.</p>
+
+    <hr>
+
+    <h2>Contact</h2>
+    <p>For any privacy-related questions, please open an issue on the extension's support page in the Chrome Web Store.</p>
+
+    <div class="footer">
+      &copy; 2026 TradeLog &nbsp;·&nbsp;
+      <a href="https://chrome.google.com/webstore" target="_blank">Chrome Web Store</a>
+    </div>
+
+  </div>
+</body>
+</html>
