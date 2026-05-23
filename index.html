@@ -1,110 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TradeLog — Privacy Policy</title>
-<style>
-* { box-sizing: border-box; margin: 0; padding: 0; }
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-  background: #0d0f14;
-  color: #e8eaf0;
-  line-height: 1.7;
-  padding: 40px 20px;
-}
-.container { max-width: 720px; margin: 0 auto; }
-.logo { font-size: 28px; font-weight: 700; margin-bottom: 8px; }
-.logo span { color: #00d4aa; }
-.updated { font-size: 13px; color: #4a5568; margin-bottom: 48px; }
-h1 { font-size: 32px; font-weight: 700; color: #e8eaf0; margin-bottom: 8px; }
-h2 {
-  font-size: 16px; font-weight: 600; color: #00d4aa;
-  text-transform: uppercase; letter-spacing: 0.08em; margin: 36px 0 12px;
-}
-p { font-size: 15px; color: #8892b0; margin-bottom: 16px; }
-ul { color: #8892b0; font-size: 15px; padding-left: 24px; margin-bottom: 16px; line-height: 2; }
-.highlight {
-  background: #141720; border: 1px solid #2a2f45;
-  border-left: 3px solid #00d4aa; border-radius: 6px;
-  padding: 16px 20px; margin: 16px 0; font-size: 15px; color: #e8eaf0;
-}
-.badge {
-  display: inline-block; background: rgba(0,212,170,0.1);
-  color: #00d4aa; border: 1px solid rgba(0,212,170,0.3);
-  border-radius: 20px; padding: 4px 14px; font-size: 13px;
-  font-weight: 500; margin-bottom: 32px;
-}
-hr { border: none; border-top: 1px solid #2a2f45; margin: 40px 0; }
-.footer { font-size: 13px; color: #4a5568; margin-top: 48px; }
-a { color: #00d4aa; text-decoration: none; }
-a:hover { text-decoration: underline; }
-code { background: #1c2030; padding: 2px 6px; border-radius: 4px; font-size: 13px; }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TradeLog — Privacy Policy</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0d0f14; color: #e8eaf0; line-height: 1.7; padding: 40px 20px; }
+    .container { max-width: 720px; margin: 0 auto; }
+    h1 { font-size: 28px; font-weight: 700; color: #00d4aa; margin-bottom: 8px; }
+    .subtitle { font-size: 13px; color: #6b7a99; margin-bottom: 40px; }
+    h2 { font-size: 16px; font-weight: 600; color: #e8eaf0; margin: 32px 0 12px; border-left: 3px solid #00d4aa; padding-left: 12px; }
+    p { font-size: 14px; color: #a0aec8; margin-bottom: 12px; text-align: justify; }
+    ul { margin: 8px 0 12px 20px; }
+    li { font-size: 14px; color: #a0aec8; margin-bottom: 6px; }
+    a { color: #00d4aa; text-decoration: none; }
+    .highlight { background: #141720; border: 1px solid #2a2f45; border-radius: 8px; padding: 16px 20px; margin: 16px 0; }
+    .highlight p { margin: 0; color: #00d4aa; font-weight: 500; }
+    .footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid #2a2f45; font-size: 12px; color: #4a5568; }
+  </style>
 </head>
 <body>
-<div class="container">
-  <div class="logo">Trade<span>Log</span></div>
-  <div class="updated">Last updated: May 20, 2026</div>
+  <div class="container">
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">TradeLog — Futures & Forex Journal · Last updated: May 20, 2026</p>
 
-  <h1>Privacy Policy</h1>
-  <div class="badge">Chrome Extension</div>
+    <div class="highlight">
+      <p>★ TradeLog stores all your trading data locally on your device using chrome.storage.local. We do not collect, transmit, or store your personal trade data on any external server.</p>
+    </div>
 
-  <div class="highlight">
-    TradeLog stores all your trading data locally on your device using <code>chrome.storage.local</code>. Your trade data is never transmitted to any external server.
+    <h2>1. Overview</h2>
+    <p>TradeLog ("the Extension") is a Chrome browser extension for logging and analysing futures and forex trades. This Privacy Policy describes what personal data we collect, how we collect it, how we use it, how we store it, how we share it, and how you can request its deletion.</p>
+
+    <h2>2. Data Collection</h2>
+    <p>TradeLog collects the following data:</p>
+    <ul>
+      <li><strong>Trade data</strong> (instrument, direction, entry/exit prices, P&L, dates, notes, setup, confidence) — entered manually by the user or imported via CSV</li>
+      <li><strong>Capital transactions</strong> (deposits and withdrawals amounts and dates)</li>
+      <li><strong>Setup configurations</strong> (names and colors defined by the user)</li>
+      <li><strong>Application settings</strong> (currency preference, display options)</li>
+      <li><strong>Email address</strong> — collected only when purchasing a Pro subscription, for subscription management purposes</li>
+      <li><strong>Pro subscription token</strong> (JWT) — issued upon payment to verify Pro access</li>
+    </ul>
+
+    <h2>3. Data Storage</h2>
+    <p>All trade data, capital transactions, setups, settings, and the Pro token are stored exclusively in your browser's local storage (chrome.storage.local) on your own device. This data never leaves your device and is not accessible by us or any third party.</p>
+    <p>Your email address and subscription token are stored on our backend server (hosted on Netlify, located in the United States) solely for the purpose of verifying and restoring your Pro subscription access.</p>
+
+    <h2>4. Data Handling and Use</h2>
+    <p>We use your data as follows:</p>
+    <ul>
+      <li><strong>Trade data</strong> — used locally to compute statistics, charts, and analytics displayed within the Extension. Never transmitted externally.</li>
+      <li><strong>Email address</strong> — used solely to verify your active Pro subscription and allow you to restore access if you reinstall the Extension. Not used for marketing or shared with third parties.</li>
+      <li><strong>Pro token</strong> — stored locally to authenticate your Pro access on each Extension launch.</li>
+    </ul>
+
+    <h2>5. Analytics</h2>
+    <p>TradeLog uses Google Analytics 4 (GA4) via the Measurement Protocol to collect anonymous usage statistics. This helps us understand how the extension is used and improve it. The following anonymous events are tracked: extension opened, tab navigation, Sample/Live mode toggle, trade saved, paywall viewed, CSV import/export.</p>
+    <p>No personally identifiable information is sent to Google Analytics. Each user is identified by a randomly generated anonymous ID stored locally on their device and cannot be used to identify you personally.</p>
+
+    <h2>6. Data Sharing</h2>
+    <p>We do not sell, rent, or share your personal data with any third party, except as described below:</p>
+    <ul>
+      <li><strong>Stripe</strong> — processes subscription payments. Stripe's own Privacy Policy governs data collected during payment. We do not have access to your payment card details.</li>
+      <li><strong>Netlify</strong> — hosts our backend functions. Your email and subscription token are stored on Netlify infrastructure. Netlify's Privacy Policy applies.</li>
+      <li><strong>Frankfurter API</strong> — fetches live currency exchange rates. No personal data is transmitted with these requests.</li>
+      <li><strong>Google Analytics</strong> — receives anonymous usage events as described above. Google's Privacy Policy applies.</li>
+      <li><strong>Anthropic API</strong> — Pro subscribers who generate AI reports send anonymised trade statistics (no personally identifiable information) to Anthropic's API for analysis. Anthropic's Privacy Policy applies.</li>
+    </ul>
+    <p>We do not share your data with any advertising networks or data brokers.</p>
+
+    <h2>7. Data Retention</h2>
+    <p>Local trade data is retained on your device until you delete it using the "Clear all data" button in the History tab, or until you uninstall the Extension. Your email and subscription token on our backend are retained for the duration of your active subscription and for a reasonable period thereafter to allow subscription restoration.</p>
+
+    <h2>8. User Rights and Data Deletion</h2>
+    <p>You can delete all local data at any time via History → Clear all data. To request deletion of your email address from our backend, please contact us at <a href="mailto:chrisalgotrading@gmail.com">chrisalgotrading@gmail.com</a>. We will process your request within 30 days.</p>
+
+    <h2>9. Children's Privacy</h2>
+    <p>TradeLog is not directed at individuals under the age of 18. We do not knowingly collect personal data from minors.</p>
+
+    <h2>10. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. The date of the last update is shown at the top of this page. Continued use of the Extension after changes constitutes acceptance of the updated policy.</p>
+
+    <h2>11. Contact</h2>
+    <p>For any questions regarding this Privacy Policy or your data: <a href="mailto:chrisalgotrading@gmail.com">chrisalgotrading@gmail.com</a></p>
+
+    <div class="footer">
+      <p>TradeLog · <a href="/terms.html">Terms of Service</a> · <a href="/privacy.html">Privacy Policy</a></p>
+    </div>
   </div>
-
-  <h2>Data Collection</h2>
-  <p>TradeLog collects the following data:</p>
-  <ul>
-    <li><strong>Trade records</strong> (instrument, direction, prices, P&L, dates, notes, setup, confidence) — stored locally on your device only</li>
-    <li><strong>Capital transactions</strong> (deposits and withdrawals) — stored locally on your device only</li>
-    <li><strong>Setup configurations</strong> and <strong>application settings</strong> — stored locally on your device only</li>
-    <li><strong>Email address</strong> — collected only when purchasing a Pro subscription, used solely for subscription verification and restoration</li>
-    <li><strong>Pro subscription token</strong> (JWT) — stored locally on your device to verify Pro access</li>
-  </ul>
-
-  <h2>Data Storage</h2>
-  <p>All trade data, transactions, setups, settings, and your Pro token are stored exclusively in your browser's local storage (<code>chrome.storage.local</code>) on your own device. This data never leaves your device.</p>
-  <p>Your email address and subscription token are stored on our backend server (hosted on Netlify, United States) solely to allow subscription verification and restoration if you reinstall the extension.</p>
-
-  <h2>Data Handling and Use</h2>
-  <ul>
-    <li><strong>Trade data</strong> — used locally to compute statistics, charts, and analytics. Never transmitted externally.</li>
-    <li><strong>Email address</strong> — used solely to verify and restore your Pro subscription. Never used for marketing or shared with third parties.</li>
-    <li><strong>Pro token</strong> — used locally to authenticate your Pro access on each launch.</li>
-  </ul>
-
-  <h2>External Network Requests</h2>
-  <p>TradeLog makes limited external requests for specific purposes only:</p>
-  <ul>
-    <li><strong>api.frankfurter.app</strong> — retrieves live currency exchange rates. No personal data is sent. Results are cached locally.</li>
-    <li><strong>tradelog-backend.netlify.app</strong> — verifies Pro subscription status using your email address. Only contacted when activating or restoring a Pro subscription.</li>
-    <li><strong>stripe.com</strong> — processes subscription payments. Governed by Stripe's own Privacy Policy. We do not have access to your payment card details.</li>
-  </ul>
-
-  <h2>Data Sharing</h2>
-  <p>We do not sell, rent, or share your personal data with any third party for advertising, analytics, or any other purpose. The only third parties that may process your data are Stripe (payments) and Netlify (hosting), as described above.</p>
-
-  <h2>Data Retention and Deletion</h2>
-  <p>All local data is stored on your device and can be deleted at any time via the <strong>"Clear all data"</strong> button in the History tab. Uninstalling the extension also removes all locally stored data.</p>
-  <p>To request deletion of your email address from our backend, contact us at <a href="mailto:achrisalgotrading@gmail.com">achrisalgotrading@gmail.com</a>. We will process your request within 30 days.</p>
-
-  <h2>Children's Privacy</h2>
-  <p>TradeLog is not directed at individuals under the age of 18. We do not knowingly collect personal data from minors.</p>
-
-  <h2>Changes to This Policy</h2>
-  <p>If this privacy policy changes, the updated version will be published at this URL with a new effective date. Continued use of the extension after changes constitutes acceptance of the updated policy.</p>
-
-  <hr>
-
-  <h2>Contact</h2>
-  <p>For any privacy-related questions: <a href="mailto:achrisalgotrading@gmail.com">achrisalgotrading@gmail.com</a></p>
-
-  <div class="footer">
-    &copy; 2026 TradeLog &nbsp;·&nbsp;
-    <a href="https://chromewebstore.google.com/detail/tradelog/nbkkkcmnalineeifnkioeekpikbdkmma" target="_blank">Chrome Web Store</a>
-  </div>
-</div>
 </body>
 </html>
